@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprueba tus reflejos</title>
+    <style type="text/css">
+    #fondo {
+        background-color: burlywood;
+        width: 1200px;
+        height: 800px;
+        position: fixed;
+        z-index: -10;
+    }
+    #cuadrado1 {
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        position: relative;
+    }
+    #cabecera {
+        display: flex;
+        align-items: center;
+    }
+    #margen1 {
+        margin-left: 200px;
+        margin-right: 5px;
+    }
+    #aciertos {
+        margin-left: 200px;
+    }
+    #promedio {
+        margin-left: 200px;
+    }
+    #cookies {
+        width: 400px;
+        height: 300px;
+        background-color: rgba(0, 0, 255, 0.315);
+        position: fixed;
+        z-index: 20;
+        top: 200px;
+        left: 370px;
+    }
+    </style>
+</head>
+<body>
+    <div id="cookies">
+        <button id="botonCookies">Acepto</button>
+
+    </div>
+    <div id="fondo"></div>
+    <div id="cabecera">
+        <div>
+            <p id="texto">Tiempo de reaccion:</p>
+        </div>
+        <div id="aciertos">
+            <p>Aciertos:</p>
+        </div>
+        <div id="aciertosPuntaje">
+            <p></p>
+        </div>
+        <div id="promedio">
+            <p>Tiempo Promedio:</p>
+        </div>
+        <div>
+            <p id="tiempopromedio"></p>
+        </div>
+        <div id="margen1">
+            <p>Nivel</p>
+        </div>
+        <div id="margen2">
+            <select name="nivel" id="nivel">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div>
+            <button id="botonNivel">Cambiar nivel</button>
+        </div> 
+    </div>
+    <div id="cuadrado1"></div>
+    <script src="./app.js"></script>
+</body>
+</html>
